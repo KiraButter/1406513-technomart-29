@@ -3,35 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Техномарт: каталог товаров</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:ital,wght@0,400;0,700;1,400">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     
     <header>
-        <section class="header-top">
+        <section class="main-header-top">
           <a href="index.html">
             <img src="https://via.placeholder.com/220x47" alt="Логотип интернет-магазина Техномарт">
           </a>
-          <p>Поиск</p>
-          <ul>
-            <li><a href="blank.html">Закладки: 0</a></li>
-            <li><a href="blank.html">Корзина: 10</a></li>
+          <input type="search" placeholder="Поиск">
+
+          <ul class="shop-nav">
+            <li class="shop-nav-item"><a href="blank.html">Закладки: 0</a></li>
+            <li class="shop-nav-item"><a href="blank.html">Корзина: 10</a></li>
           </ul>
-          <a href="blank.html">Оформить заказ</a>
+          <a class="order-link"  href="blank.html">Оформить заказ</a>
         </section>
   
-        <section class="header-middle">
-          <p>Интернет-магазин <br> строительных матералов <br> и инструментво для ремонта</p>
-          <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <a href="blank.html">Равшан Джамшутович</a> <p>
-          <a href="blank.html">Мои заказы</a>
-          <a href="blank.html">Личный кабинет</a>
-        </section>
-  
-        <section class="header-bottom">
-          <nav class="header-nav">
+        <section class="main-header-bottom">
+          <p class="desc">Интернет-магазин <br> строительных матералов <br> и инструментво для ремонта</p>
+          <a class="contacts-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+          <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+          <a class="username" href="blank.html">Равшан Джамшутович</a> <p>
+          <a class="my-orders" href="blank.html">Мои заказы</a>
+          <a class="account" href="blank.html">Личный кабинет</a>
+        
+          <nav class="main-nav">
             <ul class="nav-list">
-              <li class="nav-item"><a href="blank.html">Главная</a></li>
+              <li class="nav-item"><a href="index.html">Главная</a></li>
               <li class="nav-item"><a href="blank.html">Компания</a></li>
               <li class="nav-item"><a href="catalog.html">Каталог</a></li>
               <li class="nav-item"><a href="blank.html">Новости</a></li>
@@ -46,11 +48,11 @@
     <main>
         <h1>Каталог перфораторов</h1>
 
-        <ul>
+        <ul class="breadcrumbs">
             <li><a href="index.html">Главная</a></li>
             <li><a href="catalog.html">Каталог</a></li>
             <li><a href="blank.html">Инструмент</a></li>
-            <li>Перфораторы</li>
+            <li><a>Перфораторы</a></li>
         </ul>
 
         <h2>Перфораторы</h2>
@@ -63,96 +65,115 @@
         <section class="sorting">
             <h3>Сортировка:</h3>
             <ul class="sorting-list">
-                <li>По цене</li>
-                <li>По типу</li>
-                <li>По функционалу</li>
+                <li class="sorting-list-item"><a class="active-sort">По цене</a></li>
+                <li class="sorting-list-item"><a href="#">По типу</a></li>
+                <li class="sorting-list-item"><a href="#">По функционалу</a></li>
             </ul>
         </section>
 
         <section class="products">
+
             <ul class="products-list">
-                <li class="products-list">
+                <li class="products-item">
+                    <h3 class="products-caption">Перфоратор Bosch bfg 6000</h3>
                     <a href="blank.html">
-                        <h3>Перфоратор Bosch bfg 6000</h3>
                         <img src="https://via.placeholder.com/144x128" alt="Перфоратор Bosch bfg 6000">
-                        <p><span>30500 р.</span><br>
-                        25500 р.</p>
+                        <p><span class="old-price">30500 р.</span><br>
+                        <sapn class="price">25500 р.</sapn></p>
+                        <a class="btn btn-buy" href="#">Купить</a>
+                        <a class="btn btn-save" href="#">В закладки</a>
                       </a>
                 </li>
 
-                <li class="products-list">
+                <li class="products-item">
+                    <h3 class="products-caption">Перфоратор Bosch bfg 6000</h3>
                     <a href="blank.html">
-                        <h3>Перфоратор Bosch bfg 6000</h3>
                         <img src="https://via.placeholder.com/144x128" alt="Перфоратор Bosch bfg 6000">
-                        <p><span>30500 р.</span><br>
-                        25500 р.</p>
+                        <p><span class="old-price">30500 р.</span><br>
+                        <sapn class="price">25500 р.</sapn></p>
+                        <a class="btn btn-buy" href="#">Купить</a>
+                        <a class="btn btn-save" href="#">В закладки</a>
                       </a>
                 </li>
 
-                <li class="products-list">
+                <li class="products-item">
+                    <h3 class="products-caption">Перфоратор Bosch bfg 6000 <span class="new">new</span></h3>
                     <a href="blank.html">
-                        <h3>Перфоратор Bosch bfg 6000 <span>new</span></h3>
                         <img src="https://via.placeholder.com/144x128" alt="Перфоратор Bosch bfg 6000">
-                        <p><span>30500 р.</span><br>
-                        25500 р.</p>
+                        <p><span class="old-price">30500 р.</span><br>
+                        <span class="price">25500 р.</span></p>
+                        <a class="btn btn-buy" href="#">Купить</a>
+                        <a class="btn btn-save" href="#">В закладки</a>
                       </a>
                 </li>
 
-                <li class="products-list">
-                    <a href="blank.html">
-                        <h3>Перфоратор Bosch bfg 3000 <span>new</span></h3>
+                <li class="products-item">
+                    <h3 class="products-caption">Перфоратор Bosch bfg 3000<span class="new">new</span></h3>
+                    <a href="blank.html"> 
                         <img src="https://via.placeholder.com/144x128" alt="Перфоратор Bosch bfg 3000">
-                        <p><span>22500 р.</span><br>
-                        15500 р.</p>
+                        <p><span class="old-price">22500 р.</span><br>
+                        <span class="price">15500 р.</span></p>
+                        <a class="btn btn-buy" href="#">Купить</a>
+                        <a class="btn btn-save" href="#">В закладки</a>
                       </a>
                 </li>
 
-                <li class="products-list">
+                <li class="products-item">
+                    <h3 class="products-caption">Перфоратор Bosch bfg 6000</h3>
                     <a href="blank.html">
-                        <h3>Перфоратор Bosch bfg 6000</h3>
                         <img src="https://via.placeholder.com/144x128" alt="Перфоратор Bosch bfg 6000">
-                        <p><span>30500 р.</span><br>
-                        25500 р.</p>
+                        <p><span class="old-price">30500 р.</span><br>
+                        <span class="price">25500 р.</span></p>
+                        <a class="btn btn-buy" href="#">Купить</a>
+                        <a class="btn btn-save" href="#">В закладки</a>
                       </a>
                 </li>
 
-                <li class="products-list">
+                <li class="products-item">
+                    <h3 class="products-caption">Перфоратор Bosch bfg 2000 <span class="new">new</span></h3>
                     <a href="blank.html">
-                        <h3>Перфоратор Bosch bfg 2000 <span>new</span></h3>
                         <img src="https://via.placeholder.com/144x128" alt="Перфоратор Bosch bfg 2000">
-                        <p>12500 р.</p>
+                        <p><span class="price">12500 р.</span></p>
+                        <a class="btn btn-buy" href="#">Купить</a>
+                        <a class="btn btn-save" href="#">В закладки</a>
                       </a>
                 </li>
 
-                <li class="products-list">
-                    <a href="blank.html">
-                        <h3>Перфоратор Bosch bfg 3000 <span>new</span></h3>
+                <li class="products-item">
+                    <h3 class="products-caption">Перфоратор Bosch bfg 3000<span class="new">new</span></h3>
+                    <a href="blank.html"> 
                         <img src="https://via.placeholder.com/144x128" alt="Перфоратор Bosch bfg 3000">
-                        <p><span>22500 р.</span><br>
-                        15500 р.</p>
+                        <p><span class="old-price">22500 р.</span><br>
+                        <span class="price">15500 р.</span></p>
+                        <a class="btn btn-buy" href="#">Купить</a>
+                        <a class="btn btn-save" href="#">В закладки</a>
                       </a>
                 </li>
 
-                <li class="products-list">
+                <li class="products-item">
+                    <h3 class="products-caption">Перфоратор Bosch bfg 6000</h3>
                     <a href="blank.html">
-                        <h3>Перфоратор Bosch bfg 6000</h3>
                         <img src="https://via.placeholder.com/144x128" alt="Перфоратор Bosch bfg 6000">
-                        <p><span>30500 р.</span><br>
-                        25500 р.</p>
+                        <p><span class="old-price">30500 р.</span><br>
+                        <span class="price">25500 р.</span></p>
+                        <a class="btn btn-buy" href="#">Купить</a>
+                        <a class="btn btn-save" href="#">В закладки</a>
                       </a>
                 </li>
 
-                <li class="products-list">
-                    <a href="blank.html">
-                        <h3>Перфоратор Bosch bfg 2000 <span>new</span></h3>
+                <li class="products-item">
+                    <h3 class="products-caption">Перфоратор Bosch bfg 2000
+                    <a href="blank.html"> <span class="new">new</span></h3>
                         <img src="https://via.placeholder.com/144x128" alt="Перфоратор Bosch bfg 2000">
-                        <p>12500 р.</p>
+                        <p><span class="price">12500 р.</span></p>
+                        <a class="btn btn-buy" href="#">Купить</a>
+                        <a class="btn btn-save" href="#">В закладки</a>
                       </a>
                 </li>
             </ul>
 
             <ul class="pages-list">
-                <li class="pages-item"><a>1</a></li>
+                <li class="pages-item"><a class="active-page">1</a></li>
                 <li class="pages-item"><a href="#">2</a></li>
                 <li class="pages-item"><a href="#">3</a></li>
                 <li class="pages-item"><a href="#">Следующая</a></li>
@@ -160,7 +181,7 @@
         </section>
 
         <section class="about-perf">
-            <h2>Пара слов о перфораторах</h2>
+            <h2 class="about-caption">Пара слов о перфораторах</h2>
             <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
                Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. 
                В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
@@ -189,9 +210,9 @@
                 <li class="footer-nav-2-item"><a href="blank.html">Спецпредложение</a></li>
             </ul>
   
-            <div class="contacts-2">
-                <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-                <a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
+            <div class="footer-contacts">
+                <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+                <a class="contacts-phone-footer" href="tel:+78125550555">+7 (812) 555-05-55</a>
             </div>
         </section>
   

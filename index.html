@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page-body">
+  <body>
 
-    <header class="main-header">
+    <header>
       <section class="main-header-top">
         <a class="main-header-logo">
           <img src="https://via.placeholder.com/220x47" alt="Логотип интернет-магазина Техномарт">
         </a>
-        <input type="search" placeholder="Поиск">
+        <input class="search" type="search" placeholder="Поиск">
+
         <ul class="shop-nav">
           <li class="shop-nav-item"><a href="blank.html">Закладки</a></li>
           <li class="shop-nav-item"> <a href="blank.html">Корзина</a></li>
@@ -94,42 +95,44 @@
       <section class="popular-products">
         <h2 class="main-caption">Популярные товары:</h2> 
         <a class="btn" href="blank.html">Все популярные товары</a>
-        <ul class="popular-products-list">
-          <li class="popular-products-item">
-            <h3 class="popular-products-caption">Перфоратор Bosch bfg 9000</h3>
+
+        <ul class="products-list popular-products-list">
+
+          <li class="products-item popular-products-item">
+            <h3 class="products-caption">Перфоратор Bosch bfg 9000</h3>
             <a href="blank.html">
               <p><span class="old-price">32500 р.</span><br>
-              25500 р.</p>
+              <span class="price">25500 р.</span></p>
               <a class="btn btn-buy" href="#">Купить</a>
               <a class="btn btn-save" href="#">В закладки</a>
             </a>
           </li>
 
-          <li class="popular-products-item">
-            <h3 class="popular-products-caption">Перфоратор Bosch bfg 3000
-            <a href="blank.html"> <span class="new">new</span></h3>
+          <li class="products-item popular-products-item">
+            <h3 class="products-caption">Перфоратор Bosch bfg 3000<span class="new">new</span></h3>
+            <a href="blank.html"> 
               <p><span class="old-price">22500 р.</span><br>
-              <span class="new-price">15500 р.</span></p>
+              <span class="price">15500 р.</span></p>
               <a class="btn btn-buy" href="#">Купить</a>
               <a class="btn btn-save" href="#">В закладки</a>
             </a>
           </li>
 
-          <li class="popular-products-item">
+          <li class="products-item popular-products-item">
+            <h3 class="products-caption">Перфоратор Bosch bfg 6000</h3>
             <a href="blank.html">
-              <h3 class="popular-products-caption">Перфоратор Bosch bfg 6000</h3>
               <p><span class="old-price">30500 р.</span><br>
-              <span class="new-price">22500 р.</span></p>
+              <span class="price">22500 р.</span></p>
               <a class="btn btn-buy" href="#">Купить</a>
               <a class="btn btn-save" href="#">В закладки</a>
             </a>
           </li>
 
-          <li class="popular-products-item">
-            <h3 class="popular-products-caption">Перфоратор Bosch bfg 2000
-            <a href="blank.html"> <span class="new">new</span></h3>
+          <li class="products-item popular-products-item">
+            <h3 class="products-caption">Перфоратор Bosch bfg 2000<span class="new">new</span></h3>
+            <a href="blank.html"> 
               <p><span class="old-price">20000 р.</span><br>
-              <span class="new-price">12500 р.</span></p>
+              <span class="price">12500 р.</span></p>
               <a class="btn btn-buy" href="#">Купить</a>
               <a class="btn btn-save" href="#">В закладки</a>
             </a>
@@ -141,6 +144,7 @@
       <section class="popular-manufacturers">
         <h2 class="main-caption">Популярные производители</h2>
         <a class="btn" href="blank.html">Все производители</a>
+
         <ul class="popular-manufacturers-list">
           <li class="popular-manufacturer">
             <a href="blank.html">
@@ -245,7 +249,7 @@
       </section>
     </main>
     
-    <footer class="page-footer">
+    <footer>
       <section class="footer-top">
         <img src="https://via.placeholder.com/220x68" alt="Логотип интернет-магазина Техномарт">
         
