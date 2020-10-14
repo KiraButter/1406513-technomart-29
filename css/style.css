@@ -628,14 +628,6 @@ img {
     margin-top: 28px;
 }
 
-.new {
-    font-size: 14px;
-    line-height: 18px;
-    color: var(--basic-white);
-    text-transform: uppercase;
-    background-color: var(--basic-red);
-}
-
 .products-item,
 .pop-products-item {
     font-family: "PT Sans", Arial, sans-serif;
@@ -645,6 +637,27 @@ img {
     border: 1px solid var(--product-border);
     width: 218px;
     min-height: 316px;
+}
+
+.new {
+    overflow: hidden;
+}
+
+.new::before {
+    content: "new";
+    width: 100px;
+    height: 25px;
+    padding-top: 5px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: var(--basic-white);
+    text-transform: uppercase;
+    background-color: var(--basic-red);
+    position: absolute;
+    transform: rotate(45deg) ;
+    right: -25px;
+    top: 10px;
 }
 
 .pop-products-item:hover,
@@ -707,6 +720,26 @@ img {
    margin-bottom: 20px;
    margin-left: 45px;
    border-radius: 4px;
+}
+
+.price::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border: 10px solid transparent; 
+    border-right: 10px solid var(--basic-white); 
+    border-bottom: 10px solid var(--basic-white);
+}
+
+.price::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 10px solid transparent;
+    border-top: 10px solid var(--basic-white);
+    border-right: 10px solid var(--basic-white);
 }
 
 .btn-buy,
@@ -939,6 +972,17 @@ img {
     width: 240px;
     margin: 0;
     padding: 0;
+    position: relative;
+}
+
+.services-list::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -45px;
+    width: 10px;
+    height: 279px;
+    background-image: url(../img/Object.png);
 }
 
 .services-item {
