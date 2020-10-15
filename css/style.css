@@ -237,11 +237,16 @@ img {
     background-color: var(--shop-nav-focus);
 }
 
-.shop-nav-item:nth-child(3):hover {
+.order-link:hover {
     background-color: var(--btn-green-hover);
 }
-.shop-nav-item:nth-child(3):active {
+.order-link:active {
+    opacity: 1;
     background-color: var(--btn-green-focus);
+}
+
+.order-link a:active {
+    color: var(--white-op5);
 }
 
 /* HEADER BOTTOM */
@@ -303,6 +308,7 @@ img {
 
 .user-nav {
     text-align: right;
+    position: relative;
 
 }
 
@@ -313,10 +319,16 @@ img {
     font-size: 21px;
     line-height: 21px;
     padding: 12px 24px;
+    position: absolute;
+    top: 0;
 }
 
 .reg-link {
-    margin-left: 5px;
+    right: 0;
+}
+
+.login-link {
+    left: 57px;
 }
 
 .login-link:hover,
