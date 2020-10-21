@@ -1313,6 +1313,7 @@ background-color: var(--basic-redlight);
   padding-bottom: 70px;
 }
 
+
 .popular-manufacturers .btn-red {
   position: absolute;
   right: 19px;
@@ -1340,6 +1341,14 @@ background-color: var(--basic-redlight);
 
 .popular-manufacturer:nth-child(4n+4) {
   margin-right: 0;
+}
+
+.popular-manufacturer:hover {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.popular-manufacturer:active {
+  opacity: 0.3;
 }
 
 /* SERVICES */
@@ -1704,8 +1713,56 @@ background-color: var(--basic-redlight);
 /* MODAL */
 
 .modal {
-  display: none;
   background-color: var(--basic-white);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
   color: var(--basic-black);
+  position: fixed;
+  margin: auto;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: -34px;
+  width: 22px;
+  height: 22px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  width: 19px;
+  height: 3px;
+  background-color: var(--basic-red);
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-mail {
+  border-top: 7px solid var(--basic-red);
+  top: 120px;
+  left: 382px;
+  bottom: auto;
+  width: 460px;
+  height: 344px;
+  padding: 40px 80px;
+  box-shadow: (0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.mail-form .form-username {
+  box-sizing: border-box;
+  width: 220px;
+  border: 3px solid red;
 }
