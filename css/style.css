@@ -655,8 +655,8 @@ img {
   bottom: 27px;
 }
 
-.main-product-item::before {
-  content: "";
+.btn-back {
+  border: none;
   position: absolute;
   width: 22px;
   height: 40px;
@@ -665,8 +665,8 @@ img {
   cursor: pointer;
 }
 
-.main-product-item::after {
-  content: "";
+.btn-next {
+  border: none;
   position: absolute;
   width: 22px;
   height: 40px;
@@ -675,6 +675,11 @@ img {
   background: url(../img/icon-right.png) no-repeat 0 0;
   cursor: pointer;
 }
+
+.btn-back:focus,
+.btn-next:focus {
+  outline: none;
+} 
 
 /* PRODUCTS */
 
