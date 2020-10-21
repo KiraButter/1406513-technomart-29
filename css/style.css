@@ -341,7 +341,18 @@ img {
 }
 
 .login-link {
-  left: 57px;
+  left: 35px;
+  width: 73px;
+}
+
+.login-link::before {
+  content: "";
+  width: 20px;
+  height: 17px;
+  position: absolute;
+  background: url(../img/icon-login.png) no-repeat 0 0;
+  left: 19px;
+  opacity: 0.3;
 }
 
 .login-link:hover,
@@ -352,6 +363,10 @@ img {
 .login-link:focus,
 .reg-link:focus {
   color: var(--universal-grey)
+}
+
+.login-link:hover::before {
+  opacity: 1;
 }
 
 .main-nav {
