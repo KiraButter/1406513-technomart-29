@@ -353,28 +353,30 @@
   <section class="modal modal-mail">
     <h2 class="visually-hidden">Связь с нами</h2>
     <form class="mail-form" action="https://echo.htmlacademy.ru" method="post">
-      <p>
+      <p class="p-username">
         <label for="username">Ваше имя:</label>
         <input class="form-username" type="text" id="form-username" placeholder="Имя Фамилия">
       </p>
 
-      <p>
+      <p class="p-usermail">
         <label for="form-usermail">Ваш e-mail:</label>
         <input class="form-usermail" type="email" id="form-usermail" placeholder="email@example.com">
       </p>
 
-      <p>
+      <p class="p-lettertext">
         <label for="lettertext">Текст письма:</label>
-        <input class="lettertext"id="lettertext" placeholder="В свободной форме">
+        <textarea class="lettertext" id="lettertext" placeholder="В свободной форме"></textarea>
       </p>
-      <button class="button" type="submit">Отправить</button>
+      <p class="form-button">
+        <button class=" btn button" type="submit">Отправить</button>
+      </p>
     </form>
     <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
 
-  <section class="modal">
-    <h2>Как до нас добраться</h2>
-    <!-- Здесь будет карта -->
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.320894616139988!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1603302658403!5m2!1sru!2sru" width="943" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
     <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
 
