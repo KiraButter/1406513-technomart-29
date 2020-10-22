@@ -1441,10 +1441,17 @@ img {
   height: 31px;
   color: var(--basic-white);
   padding: 13px 0 17px 22px;
+  border-bottom: 1px solid var(--basic-darkgrey);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.services-item-current a{
+  border: none;
 }
 
 .services-item a:hover {
   background-color: var(--basic-darkgrey);
+  border-color: transparent;
 }
 
 .services-item a:active {
