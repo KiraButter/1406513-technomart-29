@@ -175,14 +175,28 @@ img {
 }
 
 .search {
+  position: relative;
   height: 42px;
   width: 285px;
+  color: var(--basic-white);
   padding: 0;
   padding-left: 43px;
+  background: url(../img/icon-search.png) no-repeat 17px 12px;
   background-color: transparent;
   border: none;
+  outline: none;
 }
 
+
+.search::placeholder {
+  color: var(--basic-white);
+}
+
+.search:focus{
+  background: url(../img/icon-search-red.png) no-repeat 17px 12px;
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
 
 .shop-nav {
   list-style: none;
@@ -1529,6 +1543,10 @@ img {
 .contacts {
   position: relative;
   min-height: 356px;
+}
+
+.contacts img {
+  cursor: pointer;
 }
 
 .contacts .btn-red,
