@@ -883,6 +883,7 @@ img {
 .products-item .btn-save,
 .pop-products-item .btn-buy,
 .pop-products-item .btn-save {
+  display: none;
   font-family: Cuprum;
   font-style: normal;
   font-weight: normal;
