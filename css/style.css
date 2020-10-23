@@ -37,6 +37,8 @@
   --bar: #00CA74;
   --filter-input: #b5b5b5;
   --green-btn-border: #367315;
+  --logo-border: #B52933;
+  --logo-border-focus: #8D1E26;
 }
 
 /* GLOBAL */
@@ -68,6 +70,7 @@ img {
   text-transform: uppercase;
   padding-top: 10px;
   padding-bottom: 10px;
+  border-radius: 3px;
 }
 
 .btn-red {
@@ -172,7 +175,16 @@ img {
   height: 42px;
   min-width: 220px;
   background-color: var(--basic-red);
-  border-bottom: 5px solid var(--btn-red-focus);
+  border-bottom: 5px solid var(--logo-border);
+}
+
+.main-header-logo:hover {
+  background-color: var(--btn-red-hover);
+}
+
+.main-header-logo:focus {
+  background-color: var(--btn-red-focus);
+  border-bottom-color: var(--logo-border-focus);
 }
 
 .search {
@@ -182,15 +194,19 @@ img {
   color: var(--basic-white);
   padding: 0;
   padding-left: 43px;
-  background: url(../img/icon-search.png) no-repeat 17px 12px;
+  padding-right: 20px;
+  background: url(../img/icon-search1.png) no-repeat 17px 12px;
   background-color: transparent;
   border: none;
   outline: none;
 }
 
-
 .search::placeholder {
   color: var(--basic-white);
+}
+
+.search:hover {
+  background: url(../img/icon-search.png) no-repeat 17px 12px;
 }
 
 .search:focus {
@@ -763,6 +779,15 @@ img {
   margin: auto 0;
 }
 
+.catalog-item-image:hover img {
+  display: none;
+}
+
+.catalog-item-image:hover .btn-buy,
+.catalog-item-image:hover .btn-save {
+  display: block;
+}
+
 .products-list {
   grid-column: 2/3;
   margin-top: 28px;
@@ -1082,6 +1107,7 @@ img {
 .filter-caption {
   background-color: var(--basic-redlight);
   height: 28px;
+  border-radius: 3px;
 }
 
 .filter {
@@ -1157,6 +1183,21 @@ img {
   text-align: center;
   border: none;
   background-color: var(--basic-redlight);
+  border-radius: 3px;
+}
+
+.price-controls .min-price {
+  position: relative;
+}
+
+.price-controls .min-price::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  background-color: var(--basic-black);
+  right: -20px;
+  top: 17px;
 }
 
 .filter ul {
@@ -1285,6 +1326,7 @@ img {
   justify-content: space-between;
   position: relative;
   background-color: var(--basic-redlight);
+  border-radius: 3px;
 }
 
 .sorting-list {
@@ -1998,7 +2040,7 @@ img {
 }
 
 .modal-mail {
-  display: ;
+  display: none;
   width: 620px;
   height: 431px;
   box-shadow: (0px 4px 20px rgba(0, 0, 0, 0.15);
