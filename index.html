@@ -15,7 +15,7 @@
   <header>
     <section class="main-header-top">
       <div class="container">
-        <a class="main-header-logo" href="#">
+        <a class="main-header-logo">
           <img src="img/logo.png" alt="Логотип интернет-магазина Техномарт">
         </a>
 
@@ -62,7 +62,8 @@
 
   <main>
 
-    <h1 class="visually-hidden" Интернет-магазин "Техномарт" </h1> <h2 class="visually-hidden">Предложения магазина</h2>
+    <h1 class="visually-hidden"> Интернет-магазин "Техномарт" </h1>
+     <h2 class="visually-hidden">Предложения магазина</h2>
       <section class="promo container">
 
         <div class="promo-item materials new">
@@ -90,19 +91,20 @@
           <a class="btn btn-promo" href="#">Бесплатно</a>
         </div>
 
+        
         <div class="main-product-item item-2" id="item-2">
           <h3>Дрели</h3>
           <p>Соседям на радость!</p>
-          <button type="button" name="back"  class="btn-back"></button> 
-          <button type="button" name="next" class="btn-next"></button>
+          <button type="button" aria-label="Предыдущий промо-блок" class="btn-back"></button>
+          <button type="button" aria-label="Следующий промо-блок" class="btn-next"></button>
           <a class="btn btn-red btn-catalog" href="catalog.html">Открыть каталог</a>
         </div>
 
         <div class="main-product-item item-1" id="item1">
           <h3>Перфораторы</h3>
           <p>Настоящие мужские игрушки</p>
-          <button type="button" name="back"  class="btn-back"></button> 
-          <button type="button" name="next" class="btn-next"></button>
+          <button type="button" aria-label="Предыдущий промо-блок" class="btn-back"></button>
+          <button type="button" aria-label="Следующий промо-блок" class="btn-next"></button>
           <a class="btn btn-red btn-catalog" href="catalog.html">Открыть каталог</a>
         </div>
 
@@ -118,7 +120,7 @@
             <a href="blank.html">
               <h3 class="products-caption">Перфоратор Bosch bfg 9000</h3>
               <p class="catalog-item-image">
-                <img src="img/bfg-9000.jpg" alt="Перфоратор" width="184" height="164">
+                <img src="img/bfg-9000.jpg" alt="" width="184" height="164">
               </p>
             </a>
             <p>
@@ -133,9 +135,9 @@
             <a href="blank.html">
               <h3 class="products-caption">Перфоратор Bosch bfg 3000</h3>
               <p class="catalog-item-image">
-                <img src="img/bfg-3000.jpg" alt="Перфоратор" width="127" height="112">
-            <a class="btn btn-buy" href="#">Купить</a>
-            <a class="btn btn-save" href="#">В закладки</a>
+                <img src="img/bfg-3000.jpg" alt="" width="127" height="112">
+                <a class="btn btn-buy" href="#">Купить</a>
+                <a class="btn btn-save" href="#">В закладки</a>
               </p>
             </a>
             <p><span class="old-price">22500 р.</span>
@@ -146,9 +148,9 @@
             <a href="blank.html">
               <h3 class="products-caption">Перфоратор Bosch bfg 6000</h3>
               <p class="catalog-item-image">
-                <img src="img/bfg-6000.jpg" alt="Перфоратор" width="144" height="128">
-            <a class="btn btn-buy" href="#">Купить</a>
-            <a class="btn btn-save" href="#">В закладки</a>
+                <img src="img/bfg-6000.jpg" alt="" width="144" height="128">
+                <a class="btn btn-buy" href="#">Купить</a>
+                <a class="btn btn-save" href="#">В закладки</a>
               </p>
             </a>
             <p><span class="old-price">30500 р.</span>
@@ -160,9 +162,9 @@
             <a href="blank.html">
               <h3 class="products-caption">Перфоратор Bosch bfg 2000</h3>
               <p class="catalog-item-image">
-                <img src="img/bfg-2000.jpg" alt="Перфоратор" width="127" height="112">
-            <a class="btn btn-buy" href="#">Купить</a>
-            <a class="btn btn-save" href="#">В закладки</a>
+                <img src="img/bfg-2000.jpg" alt="" width="127" height="112">
+                <a class="btn btn-buy" href="#">Купить</a>
+                <a class="btn btn-save" href="#">В закладки</a>
               </p>
             </a>
             <p>
@@ -289,7 +291,9 @@
           <h3 class="about-caption">Контакты</h3>
           <p>Вы можете забрать товар сами,<br>
             заехав в наш офис:</p>
+            <a href="#">
           <img src="img/map.png" alt="Карта с адресом">
+            </a>
           <a class="btn btn-red" href="blank.html">Заблудились? Напишите нам!</a>
         </section>
       </div>
@@ -333,13 +337,13 @@
 
         <ul class="social-button-list">
           <li>
-            <a class="social-button vk" href="https://vk.com/htmlacademy"></a>
+            <a class="social-button vk" href="https://vk.com/htmlacademy"><span class="visually-hidden">Вконтакте</span></a>
           </li>
           <li>
-            <a class="social-button fb" href="https://ru-ru.facebook.com/"></a>
+            <a class="social-button fb" href="https://ru-ru.facebook.com/"><span class="visually-hidden">Facebook</span></a>
           </li>
           <li>
-            <a class="social-button inst" href="https://www.instagram.com/"></a>
+            <a class="social-button inst" href="https://www.instagram.com/"><span class="visually-hidden">Instagram</span></a>
           </li>
         </ul>
 
@@ -355,7 +359,10 @@
 
   <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.320894616139988!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1603302658403!5m2!1sru!2sru" width="943" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.320894616139988!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1603302658403!5m2!1sru!2sru"
+      width="943" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
+      title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
     <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
 

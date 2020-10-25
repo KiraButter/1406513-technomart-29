@@ -440,7 +440,8 @@ img {
   padding-right: 25px;
 }
 
-.nav-item:hover {
+.nav-item:hover,
+.nav-item a:focus {
   background-color: var(--basic-darkgrey);
 }
 
@@ -713,11 +714,6 @@ img {
   right: 24px;
   background: url(../img/icon-right.png) no-repeat 0 0;
   cursor: pointer;
-}
-
-.btn-back:focus,
-.btn-next:focus {
-  outline: none;
 }
 
 /* PRODUCTS */
