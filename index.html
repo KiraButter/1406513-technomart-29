@@ -91,7 +91,6 @@
           <a class="btn btn-promo" href="#">Бесплатно</a>
         </div>
 
-        
         <div class="main-product-item item-2" id="item-2">
           <h3>Дрели</h3>
           <p>Соседям на радость!</p>
@@ -291,10 +290,10 @@
           <h3 class="about-caption">Контакты</h3>
           <p>Вы можете забрать товар сами,<br>
             заехав в наш офис:</p>
-            <a href="#">
+            <a href="#" class="map">
           <img src="img/map.png" alt="Карта с адресом">
             </a>
-          <a class="btn btn-red" href="blank.html">Заблудились? Напишите нам!</a>
+          <a class="btn btn-red mail-btn" href="blank.html">Заблудились? Напишите нам!</a>
         </section>
       </div>
   </main>
@@ -370,26 +369,28 @@
     <h2 class="visually-hidden">Связь с нами</h2>
     <form class="mail-form" action="https://echo.htmlacademy.ru" method="post">
       <p class="p-username">
-        <label for="username">Ваше имя:</label>
-        <input class="form-username" type="text" id="form-username" placeholder="Имя Фамилия">
+        <label for="form-username">Ваше имя:</label>
+        <input class="form-username" type="text" id="form-username" placeholder="Имя Фамилия" name="username">
       </p>
 
       <p class="p-usermail">
         <label for="form-usermail">Ваш e-mail:</label>
-        <input class="form-usermail" type="email" id="form-usermail" placeholder="email@example.com">
+        <input class="form-usermail" type="email" id="form-usermail" placeholder="email@example.com" name="mail">
       </p>
 
       <p class="p-lettertext">
         <label for="lettertext">Текст письма:</label>
-        <textarea class="lettertext" id="lettertext" placeholder="В свободной форме"></textarea>
+        <textarea class="lettertext" id="lettertext" placeholder="В свободной форме" name="lettertext"></textarea>
       </p>
       <p class="form-button">
-        <button class=" btn button" type="submit">Отправить</button>
+        <button class="btn button" type="submit">Отправить</button>
       </p>
     </form>
     <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
 
+  <script src="mail-form.js"></script>
+  <script src="map.js"></script>
 </body>
 
 </html>

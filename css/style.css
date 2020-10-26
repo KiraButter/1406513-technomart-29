@@ -486,7 +486,9 @@ img {
 }
 
 .account-icon:hover,
-.logout-icon:hover {
+.logout-icon:hover,
+.account-icon:focus,
+.logout-icon:focus {
   opacity: 1;
 }
 
@@ -1247,6 +1249,7 @@ img {
   color: var(--basic-black);
 }
 
+
 .filter-input-checkbox+label::before {
   content: "";
   position: absolute;
@@ -1270,6 +1273,11 @@ img {
 
 .filter-input-checkbox+label:hover::before,
 .filter-input-radio+label:hover::before {
+  border-color: var(--filter-input);
+}
+
+.filter-input-checkbox:focus+label::before,
+.filter-input-radio:focus+label::before {
   border-color: var(--filter-input);
 }
 
@@ -1314,7 +1322,6 @@ img {
 }
 
 .btn-filter:focus {
-  outline: none;
   border-color: var(--basic-red);
 }
 
@@ -1369,44 +1376,44 @@ img {
 }
 
 .price-more {
-  border: 6px solid transparent;
-  border-bottom: 12px solid var(--universal-grey);
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
   position: absolute;
-  top: 9px;
-  right: 7%;
+  right: 49px;
+  top: 14px;
 }
 
 .price-less {
-  border: 6px solid transparent;
-  border-top: 12px solid var(--universal-grey);
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
   position: absolute;
+  transform: rotate(180deg);
   top: 14px;
-  right: 3%;
+  right: 17px;
 }
 
-.price-more:hover {
-  border-bottom-color: var(--basic-black);
+.price-more:hover path,
+.price-less:hover path,
+.price-more:focus path,
+.price-less:focus path {
+  fill: var(--basic-black);
 }
 
-.price-less:hover {
-  border-top-color: var(--basic-black);
+.price-more:active path,
+.price-less:active path {
+  fill: var(--basic-red);
 }
 
-.price-more:active {
-  border-bottom-color: var(--basic-red);
+.active-price path{
+  fill: var(--basic-red);
 }
 
-.price-less:active {
-  border-top-color: var(--basic-red);
-}
-
-.active-price {
-  border-bottom-color: var(--basic-red);
-}
-
-.active-price:hover,
-.active-price:active {
-  border-bottom-color: var(--basic-red);
+.active-price:hover path,
+.active-price:active path,
+.active-price:focus path {
+  fill: var(--basic-red);
 }
 
 /* POPULAR MANUFACT */
@@ -1840,7 +1847,6 @@ img {
 }
 
 .modal-close {
-  outline: none;
   position: absolute;
   top: 14px;
   right: 11px;
@@ -2042,4 +2048,36 @@ img {
   width: 620px;
   height: 274px;
 }
+
+
+.modal-show {
+  display: block;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 

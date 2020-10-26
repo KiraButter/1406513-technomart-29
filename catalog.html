@@ -41,9 +41,9 @@
 
         <div class="user-nav">
           <p class="username">
-            <a class="account-icon" href="#"></a>
+            <a class="account-icon" href="#" aria-label="Личный кабинет"></a>
             Равшан Джамшутович
-            <a class="logout-icon" href="#"></a>
+            <a class="logout-icon" href="#" aria-label="Выход из аккаунта"></a>
           </p>
 
           <a class="my-orders" href="blank.html">Мои заказы</a>
@@ -145,7 +145,7 @@
                 <label for="filter-acum">Аккумуляторные</label>
               </li>
               <li class="filter-option filter-radio">
-                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group" value="mains" id="filter-mains" d>
+                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group" value="mains" id="filter-mains">
                 <label for="filter-mains">Сетевые</label>
               </li>
             </ul>
@@ -162,8 +162,12 @@
           <li class="sorting-list-item"><a href="#">По типу</a></li>
           <li class="sorting-list-item"><a href="#">По функционалу</a></li>
         </ul>
-        <a class="price-more active-price"></a>
-        <span class="price-less"></span>
+        <button type="button" class="price-more active-price" aria-label="Цена по возрастанию"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5.5 0L11 10L0 10" fill="#C5C5C5"/>
+          </svg></button>
+        <button type="button" class="price-less" aria-label="Цена по убыванию"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5.5 0L11 10L0 10" fill="#C5C5C5"/>
+          </svg></button>
       </div>
 
       <ul class="products-list">
