@@ -782,14 +782,18 @@ img {
 }
 
 .pop-products-item:hover img,
-.products-item:hover img {
+.pop-products-item:focus-within img,
+.products-item:hover img ,
+.products-item:focus-within img{
   display: none;
 }
 
 .pop-products-item:hover .btn-buy,
 .pop-products-item:hover .btn-save,
 .products-item:hover .btn-buy,
-.products-item:hover .btn-save {
+.products-item:hover .btn-save,
+.products-item:focus-within .btn-buy,
+.products-item:focus-within .btn-save  {
   display: block;
 }
 
@@ -1773,7 +1777,8 @@ img {
   border-radius: 50%;
 }
 
-.social-button:hover {
+.social-button:hover,
+.social-button:focus-within {
   background-color: var(--basic-red);
 }
 
