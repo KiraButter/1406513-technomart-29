@@ -659,15 +659,17 @@ img {
   background-color: var(--special-btn-focus);
 }
 
+.promo-slider {
+  position: relative;
+  grid-column: 1/3;
+  grid-row: 2/4;
+}
 
 .main-product-item {
-  position: relative;
   background-color: var(--basic-grey);
   color: var(--basic-white);
   min-height: 242px;
   min-width: 596px;
-  grid-column: 1/3;
-  grid-row: 2/4;
   padding-left: 24px;
   padding-top: 24px;
 }
@@ -695,6 +697,7 @@ img {
 .btn-catalog {
   position: absolute;
   bottom: 27px;
+  left: 24px;
 }
 
 .btn-back {
@@ -703,6 +706,7 @@ img {
   width: 22px;
   height: 40px;
   top: 122px;
+  left: 24px;
   background: url(../img/icon-left.svg) no-repeat 0 0;
   cursor: pointer;
 }
@@ -1524,7 +1528,7 @@ img {
   background-color: var(--basic-grey);
 }
 
-.services-item a {
+.services-item  {
   display: block;
   height: 31px;
   color: var(--basic-white);
@@ -1533,23 +1537,17 @@ img {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.services-item-current a {
-  border: none;
-}
-
-.services-item a:hover {
+.services-item:hover,
+.services-item:focus {
   background-color: var(--basic-darkgrey);
   border-color: transparent;
 }
 
-.services-item a:active {
-  color: var(--basic-grey);
-  background-color: var(--basic-white);
-}
-
-.services-item-current a,
-.services-item-current a:hover,
-.services-item-current a:active {
+.services-item-current,
+.services-item-current:hover,
+.services-item-current:active,
+.services-item-current:focus {
+  border-color: transparent;
   color: var(--basic-grey);
   background-color: var(--basic-white);
 }
@@ -1557,9 +1555,6 @@ img {
 .services-item-caption {
   color: var(--basic-grey);
   margin: 0;
-}
-
-.services-item-caption {
   margin-bottom: 30px;
 }
 
@@ -1570,17 +1565,20 @@ img {
 }
 
 .service-delivery {
+  background-color: var(--background-grey);
   background: url(../img/Layer131.png) no-repeat;
   background-position: 100% -35%;
 }
 
 .service-guarantee {
+  background-color: var(--background-grey);
   background: url(../img/Layer130.png) no-repeat;
   background-position: 100% 0%;
   display: none;
 }
 
 .service-credit {
+  background-color: var(--background-grey);
   background: url(../img/Layer119.png) no-repeat;
   background-position: 100% 0%;
   display: none;
@@ -2057,6 +2055,15 @@ img {
 
 .modal-error {
   animation: shake 0.6s;
+}
+
+
+.show {
+  display: block;
+}
+
+.none {
+  display: none;
 }
 
 /* ANIMATION */
