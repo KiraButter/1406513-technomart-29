@@ -937,19 +937,25 @@ img {
   font-family: Cuprum;
   font-style: normal;
   font-weight: normal;
-  position: absolute;
-  left: 41px;
   text-align: center;
   border-radius: 3px;
+}
+
+.buttons-shop {
+  position: absolute;
+  top: 38px;
+  left: 41px;
 }
 
 .btn-buy {
   background-color: var(--btn-green);
   color: var(--basic-white);
-  width: 125px;
-  height: 15px;
-  padding-left: 10px;
-  top: 38px;
+  width: 42px;
+  height: min-content; 
+  padding-bottom: 7px;
+  padding-left: 53px;
+  padding-right: 40px;
+  margin-bottom: 10px;
   border-bottom: 3px solid var(--green-btn-border);
 }
 
@@ -978,8 +984,9 @@ img {
   color: var(--basic-grey);
   border: 3px solid var(--btn-green);
   width: 129px;
-  height: 12px;
-  top: 86px;
+  height: max-content;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 .btn-save:hover {
@@ -1629,28 +1636,16 @@ img {
   margin-bottom: 30px;
 }
 
-.company,
-.contacts {
-  position: relative;
-  min-height: 356px;
-}
-
 .contacts img {
   cursor: pointer;
 }
-
-.contacts .btn-red,
-.company .btn-red {
-  position: absolute;
-  bottom: 0;
-}
-
 
 .company-list {
   font-family: "Cuprum";
   list-style: none;
   font-size: 18px;
   margin: 0;
+  margin-bottom: 20px;
 }
 
 .company-list li {
@@ -1780,7 +1775,9 @@ img {
 .social-button-list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
+  padding-right: 118px;
 }
 
 .social-button {
