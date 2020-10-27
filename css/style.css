@@ -408,6 +408,11 @@ img {
   opacity: 1;
 }
 
+.login-link:active::before,
+.reg-link:active::before {
+  opacity: 0.3;
+} 
+
 .main-nav {
   grid-column-start: 1;
   grid-column-end: 4;
@@ -464,6 +469,10 @@ img {
 }
 
 .account-icon {
+  color: var(--basic-black);
+}
+
+.account-icon::after {
   content: "";
   position: absolute;
   width: 20px;
@@ -485,14 +494,21 @@ img {
   top: 14px;
 }
 
-.account-icon:hover,
+.account-icon:hover::after,
 .logout-icon:hover,
-.account-icon:focus,
+.account-icon:focus::after,
 .logout-icon:focus {
   opacity: 1;
 }
 
-.username:focus,
+.account-icon:active::after,
+.logout-icon:active,
+.account-icon:active::after,
+.logout-icon:active {
+  opacity: 0.3;
+}
+
+.username a:active,
 .my-orders:focus,
 .account:focus {
   color: var(--universal-grey);
