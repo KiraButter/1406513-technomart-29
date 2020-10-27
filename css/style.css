@@ -1541,18 +1541,16 @@ img {
   background-image: url(../img/Object.png);
 }
 
-.services-item {
+.services-item  {
+  box-sizing: content-box;
+  padding: 13px 0 17px 22px;
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
   background-color: var(--basic-grey);
-}
-
-.services-item  {
   display: block;
-  height: 31px;
+  height: max-content;
   color: var(--basic-white);
-  padding: 13px 0 17px 22px;
   border-bottom: 1px solid var(--basic-darkgrey);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
