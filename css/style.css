@@ -1213,7 +1213,7 @@ img {
   height: 4px;
   padding: 0;
   border: 8px solid var(--basic-white);
-  background-color: var(--basic-black-op);
+  background-color: var(--old-price);
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 var(--basic-black-op);
   cursor: pointer;
