@@ -1,6 +1,6 @@
-const mapLink = document.querySelector(".map");
-const mapPopup = document.querySelector(".modal-map");
-const mapClose = mapPopup.querySelector(".modal-close");
+var mapLink = document.querySelector(".map");
+var mapPopup = document.querySelector(".modal-map");
+var mapClose = mapPopup.querySelector(".modal-close");
 
 mapLink.addEventListener("click", function (event) {
   event.preventDefault();

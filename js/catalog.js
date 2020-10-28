@@ -1,6 +1,6 @@
-const buttons = document.querySelectorAll(".btn-buy");
-const orderPopup = document.querySelector(".modal-order");
-const orderClose = orderPopup.querySelector(".modal-close");
+var buttons = document.querySelectorAll(".btn-buy");
+var orderPopup = document.querySelector(".modal-order");
+var orderClose = orderPopup.querySelector(".modal-close");
 
 buttons.forEach ( (btnBuy) => {
     btnBuy.addEventListener("click", function () {
@@ -24,4 +24,3 @@ window.addEventListener("keydown", function(event) {
         }
     }
 });
-//elements.forEach((item) => { item.addEventListener(event, callback []) })

@@ -172,7 +172,7 @@ img {
 
 .main-header-logo {
   text-align: center;
-  width: 261px;
+  width: 235px;
   padding-top: 12px;
   height: 29px;
   background-color: var(--basic-red);
@@ -231,17 +231,17 @@ img {
 }
 
 .bookmarks {
-  padding-left: 20px;
-  padding-right: 10px;
+  padding-left: 29px;
+  padding-right: 9px;
 }
 
 .bookmarks::before {
   content: "";
   position: absolute;
-  top: 14px;
-  left: 35px;
+  top: 13px;
+  left: 20px;
   width: 14px;
-  height: 16px;
+  height: 14px;
   background: url("../img/icon-bookmark.png") no-repeat 0 0;
   opacity: 0.3;
 }
@@ -250,20 +250,24 @@ img {
   opacity: 1;
 }
 
-.cart {
-  padding-left: 20px;
-  width: 116px;
+.cart-red .cart {
+  margin-left: 14px;
+  width: 100px;
+  padding-left: 25px;
+  padding-right: 12px;
+  background-color: var(--basic-red);
 }
 
-.cart-num {
-  background-color: var(--basic-red);
+.cart {
+  padding-left: 30px;
+  padding-right: 8px;
 }
 
 .cart::before {
   content: "";
   position: absolute;
   top: 14px;
-  left: 13px;
+  left: 26px;
   width: 15px;
   height: 15px;
   background: url("../img/icon-cart.png") no-repeat 0 0;
@@ -276,22 +280,23 @@ img {
 
 .shop-nav-item a {
   color: var(--basic-white);
+  height: 22px;
   display: block;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
 .shop-nav-item .order-link {
-  padding-bottom: 8px;
+  padding-bottom: 10px;
   background-color: var(--btn-green);
 }
 
-.shop-nav-item:active {
+.shop-nav-item a:active {
   opacity: 0.5;
   background-color: var(--shop-nav-focus);
 }
 
-.order-link:hover {
+.order-link a:hover {
   background-color: var(--btn-green-hover);
 }
 

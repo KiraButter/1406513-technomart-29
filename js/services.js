@@ -1,10 +1,10 @@
-const btnDelivery = document.querySelector(".del");
-const btnGuarantee = document.querySelector(".guar");
-const btnCredit = document.querySelector(".cred");
+var btnDelivery = document.querySelector(".del");
+var btnGuarantee = document.querySelector(".guar");
+var btnCredit = document.querySelector(".cred");
 
-const DeliveryBlock = document.querySelector(".service-delivery");
-const GuaranteeBlock = document.querySelector(".service-guarantee");
-const CreditBlock = document.querySelector(".service-credit");
+var DeliveryBlock = document.querySelector(".service-delivery");
+var GuaranteeBlock = document.querySelector(".service-guarantee");
+var CreditBlock = document.querySelector(".service-credit");
 
 btnDelivery.addEventListener("click", function() {
     event.preventDefault();
