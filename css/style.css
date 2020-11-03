@@ -1497,7 +1497,7 @@ img {
   height: 17px;
   left: -31px;
   bottom: 2px;
-  background: url(../img/shape.png) no-repeat 0 0;
+  background: url(../img/sshape.png) no-repeat 0 0;
 }
 
 .filter-input-checkbox+label:hover::before,
@@ -1771,7 +1771,7 @@ img {
   top: -45px;
   width: 10px;
   height: 279px;
-  background-image: url(../img/object.png);
+  background-image: url(../img/oobject.png);
 }
 
 .services-item  {
@@ -1826,20 +1826,20 @@ img {
 
 .service-delivery {
   background-color: var(--background-grey);
-  background: url(../img/layer131.png) no-repeat;
+  background: url(../img/llayer131.png) no-repeat;
   background-position: 100% -28%;
 }
 
 .service-guarantee {
   background-color: var(--background-grey);
-  background: url(../img/layer130.png) no-repeat;
+  background: url(../img/llayer130.png) no-repeat;
   background-position: 100% 0%;
   display: none;
 }
 
 .service-credit {
   background-color: var(--background-grey);
-  background: url(../img/layer119.png) no-repeat;
+  background: url(../img/llayer119.png) no-repeat;
   background-position: 100% 0%;
   display: none;
 }
@@ -2345,7 +2345,7 @@ line-height: 24px;
   border-radius: 50%;
   left: 81px;
   top: 48px;
-  background-image: url(../img/shape1.svg);
+  background-image: url(../img/sshape1.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
