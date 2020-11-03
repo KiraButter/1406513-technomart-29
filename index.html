@@ -17,10 +17,13 @@
     <section class="main-header-top">
       <div class="container">
         <a class="main-header-logo">
-          <img src="img/logo-technomart1.png" alt="Логотип интернет-магазина Техномарт" width="108" height="18">
+          <img src="img/logo-technomart1.png" alt="Логотип интернет-магазина Техномарт">
         </a>
 
-        <input class="search" type="search" placeholder="Поиск:">
+        <form method="GET" action="https://echo.htmlacademy.ru">
+        <label for="search" class="visually-hidden">Поиск товаров</label>
+        <input class="search" id="search" name="search" type="search" placeholder="Поиск:">
+        </form>
 
         <ul class="shop-nav">
           <li class="shop-nav-item"><a class="bookmarks" href="blank.html">Закладки: 0</a></li>
@@ -105,6 +108,8 @@
         <a class="btn btn-red btn-catalog" href="catalog.html">Открыть каталог</a>
         <button type="button" aria-label="Предыдущий промо-блок" class="btn-back"></button>
         <button type="button" aria-label="Следующий промо-блок" class="btn-next"></button>
+        <button type="button" class="btn-radio-back active-btn-radio"></button>
+        <button type="button" class="btn-radio-next"></button>
       </div>
     </section>
 
@@ -118,7 +123,7 @@
           <a href="blank.html">
             <h3 class="products-caption">Перфоратор BOSCH BFG 9000</h3>
             <p class="catalog-item-image">
-              <img src="img/bfg-9000.jpg" alt="" width="184" height="164">
+              <img src="img/bfg-9000.jpg" alt="Перфоратор с длинным сверлом" width="184" height="164">
             </p>
           </a>
           <p>
@@ -135,7 +140,7 @@
           <a href="blank.html">
             <h3 class="products-caption">Перфоратор BOSCH BFG 3000</h3>
             <p class="catalog-item-image">
-              <img src="img/bfg-3000.jpg" alt="" width="127" height="112">
+              <img src="img/bfg-3000.jpg" alt="Перфоратор с коротким сверлом" width="127" height="112">
             </p>
           </a>
           <p><span class="old-price">22500 р.</span>
@@ -151,7 +156,7 @@
           <a href="blank.html">
             <h3 class="products-caption">Перфоратор BOSCH BFG 6000</h3>
             <p class="catalog-item-image">
-              <img src="img/bfg-6000.jpg" alt="" width="144" height="128">
+              <img src="img/bfg-6000.jpg" alt="Перфоратор со средним сверлом" width="144" height="128">
             </p>
           </a>
           <p><span class="old-price">30500 р.</span>
@@ -167,7 +172,7 @@
           <a href="blank.html">
             <h3 class="products-caption">Перфоратор BOSCH BFG 2000</h3>
             <p class="catalog-item-image">
-              <img src="img/bfg-2000.jpg" alt="" width="127" height="112">
+              <img src="img/bfg-2000.jpg" alt="Перфоратор с коротким сверлом" width="127" height="112">
             </p>
           </a>
           <p>
@@ -312,7 +317,7 @@
     <section class="footer-top">
       <div class="container">
         <a class="footer-logo">
-          <img src="img/logo-technomart.svg" alt="Логотип интернет-магазина Техномарт">
+          <img src="img/logo-technomart.svg" alt="Логотип интернет-магазина Техномарт" width="138px" height="23px">
         </a>
 
         <ul class="footer-nav-1">
@@ -364,7 +369,7 @@
             <a href="https://mail.ru">mail@htmlacademy.ru</a>
           </li>
           <li>Разработано —
-            <a href="https://htmlacademy.ru/intensive/htmlcss#price">htmlacademy.ru</a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </li>
         </ul>
       </div>
