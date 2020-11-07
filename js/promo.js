@@ -8,13 +8,13 @@ var btnRadioBack = document.querySelector(".btn-radio-back");
 btnNext.addEventListener("click", function() {
     item2.classList.add("show");
     item1.classList.add("none");
-    btnRadioBack.classList.remove("active-btn-radio");
-    btnRadioNext.classList.add("active-btn-radio");
+    btnRadioNext.classList.remove("active-btn-radio");
+    btnRadioBack.classList.add("active-btn-radio");
 });
 
 btnBack.addEventListener("click", function() {
     item2.classList.remove("show");
     item1.classList.remove("none");
-    btnRadioNext.classList.remove("active-btn-radio");
-    btnRadioBack.classList.add("active-btn-radio");
+    btnRadioBack.classList.remove("active-btn-radio");
+    btnRadioNext.classList.add("active-btn-radio");
 });
